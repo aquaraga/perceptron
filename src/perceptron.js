@@ -10,7 +10,11 @@ class Perceptron {
 	}
 
 	toString() {
-		return `Learning rate: ${this.eta}, Epochs: ${this.iter}`	;
+		return `Learning rate: ${this.eta}, Epochs: ${this.iter}`;
+	}
+
+	weights() {
+		return [];
 	}
 }
 

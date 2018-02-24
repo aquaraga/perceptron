@@ -19,5 +19,11 @@ describe('Perceptron', function() {
 
     	assert.equal("Learning rate: 0.01, Epochs: 10", desc);
     });
+
+    it('should give an empty weight vector when not trained', () => {
+      let perceptron = new Perceptron();
+      
+      assert.deepEqual([], perceptron.weights());      
+    })
   });
 });

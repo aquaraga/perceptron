@@ -4,7 +4,8 @@
   "description": "Implements a basic perceptron learning algorithm",
   "main": "perceptron.js",
   "scripts": {
-    "test": "mocha --reporter nyan"
+    "test": "mocha --reporter nyan",
+    "test:watch": "mocha --reporter nyan --watch"
   },
   "repository": {
     "type": "git",
