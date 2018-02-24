@@ -1,5 +1,5 @@
 "use strict";
-var Perceptron = require('../perceptron');
+var Perceptron = require('../src/perceptron');
 
 var assert = require('assert');
 describe('Perceptron', function() {
