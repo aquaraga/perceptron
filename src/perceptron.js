@@ -3,7 +3,7 @@
 class Perceptron {
 	constructor(options) {
 		if (!options) {
-		options = {};
+		    options = {};
 		}
 		this.eta = options.eta || 0.01;
 		this.iter = options.iter || 10;
