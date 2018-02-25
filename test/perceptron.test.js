@@ -58,5 +58,16 @@ describe('Perceptron', function() {
       assert.deepEqual([-1, -1, 1, -3], perceptron.weights());      
 
     });
+
+    xit('should update weight vector, for each observation, as many times as the epoch', () => {
+      let perceptron = new Perceptron({eta: 0.5, iter: 2});
+
+      let X = [[2, 1, 2], [1, -1, 3]];
+      let y = [1, -1]
+      perceptron.train(X, y);
+      
+      assert.deepEqual([0, 1, 2, -1], perceptron.weights());      
+
+    });
   });
 });
